@@ -25,7 +25,6 @@ namespace Automat_wpf
         {
             GUI gui = new GUI();
             gui.MainMenu();
-            label1.Content = "Hello";
             InitializeComponent();
         }
     }
