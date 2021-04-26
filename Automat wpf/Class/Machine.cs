@@ -7,7 +7,6 @@ namespace Automat_wpf.Class
 {
     class Machine
     {
-
         public List<Item> Items { get; set; }
         public int Money { get; set; }
 
