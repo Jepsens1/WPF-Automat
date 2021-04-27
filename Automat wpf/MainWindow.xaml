@@ -9,19 +9,20 @@
     <Grid Margin="-2,0,2,0">
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="359" Margin="457,60,0,0" VerticalAlignment="Top" Width="335" Background="#FF645555"/>
         <Label Content="Deposit Money" Margin="565,260,0,0" VerticalAlignment="Top" Height="50" Width="145" Background="{x:Null}" Foreground="White" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" RenderTransformOrigin="1.069,0.1"/>
-        <Button Content="5$" HorizontalAlignment="Left" Margin="480,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit5_Click"/>
-        <Button Content="20$" HorizontalAlignment="Left" Margin="707,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit20_Click"/>
-        <Button Content="10$" HorizontalAlignment="Left" Margin="595,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit10_Click"/>
+        <Button Content="5$" HorizontalAlignment="Left" Margin="480,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit_Money"/>
+        <Button Content="20$" HorizontalAlignment="Left" Margin="707,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit_Money"/>
+        <Button Content="10$" HorizontalAlignment="Left" Margin="595,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.333,0.5" Click="Deposit_Money"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="792" Background="Red"/>
         <Label Content="Vending machine" HorizontalAlignment="Left" Margin="245,0,0,0" VerticalAlignment="Top" Height="60" Width="320" Foreground="White" FontSize="36" FontWeight="Bold" Background="{x:Null}"/>
         <Label Name="MoneyDeposit" Content="" HorizontalAlignment="Left" Margin="527,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="8.289,1.923" Width="255" Foreground="White" FontSize="18"/>
         <Label Name="TotalMoney" Content="" HorizontalAlignment="Left" Margin="520,226,0,0" VerticalAlignment="Top" Width="262" FontSize="18" FontWeight="Bold" Foreground="White" />
-        <Button x:Name="SodaButton" Content="Soda" HorizontalAlignment="Left" Margin="480,110,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="CandyButton" Content="Candy" HorizontalAlignment="Left" Margin="707,110,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="NutsButton" Content="Nuts" HorizontalAlignment="Left" Margin="595,110,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="ChipsButton" Content="Chips" HorizontalAlignment="Left" Margin="655,170,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="3,1.75"/>
-            <Button x:Name="BubblegumButton" Content="BubbleGum" HorizontalAlignment="Left" Margin="527,170,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.667,0.5"/>
-            <Label Name="test" Content="" HorizontalAlignment="Left" Margin="115,226,0,0" VerticalAlignment="Top" Width="215"/>
+        <Button Name="SodaButton" Content="Soda 5$" HorizontalAlignment="Left" Margin="480,110,0,0" VerticalAlignment="Top" Width="75" Click="BuyItem"/>
+        <Button Name="CandyButton" Content="Candy 5$" HorizontalAlignment="Left" Margin="695,65,0,0" VerticalAlignment="Top" Width="75" Click="BuyItem"/>
+        <Button Name="NutsButton" Content="Nuts 7$" HorizontalAlignment="Left" Margin="595,65,0,0" VerticalAlignment="Top" Width="75" Click="BuyItem"/>
+        <Button Name="ChipsButton" Content="Chips 10$" HorizontalAlignment="Left" Margin="595,115,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="3,1.75" Click="BuyItem"/>
+        <Button Name="BubblegumButton" Content="BubbleGum 3$" HorizontalAlignment="Left" Margin="480,65,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="1.667,0.5" Click="BuyItem"/>
+        <Label Name="PurchaceLabel" Content="" HorizontalAlignment="Left" Margin="80,170,0,0" VerticalAlignment="Top" Width="285" Height="140" FontSize="16" FontWeight="Bold"/>
+        <Button Content="ReturnMoney" HorizontalAlignment="Left" Margin="695,115,0,0" VerticalAlignment="Top" Width="75" Click="ReturnMoney"/>
 
 
     </Grid>

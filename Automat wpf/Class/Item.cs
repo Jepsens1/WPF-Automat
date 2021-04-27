@@ -12,6 +12,7 @@ namespace Automat_wpf.Class
 
         public int Price { get; set; }
 
+        public int Amount { get; set; }
         //public int ItemsRemaining { get; set; }
 
         public Item(string productName, int price/*, int itemsRemaining*/)
@@ -21,4 +22,5 @@ namespace Automat_wpf.Class
             //ItemsRemaining = itemsRemaining;
         }
     }
+        
 }
