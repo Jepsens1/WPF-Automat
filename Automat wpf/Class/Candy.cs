@@ -18,6 +18,7 @@ namespace Automat_wpf.Class
         public Candy(string productName, int price, CandyTypes type): base(productName, price)
         {
             TypeCandy = type;
+            Catagory = "Candy";
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Automat_wpf.Class
         public Nut(string productName, int price, NutTypes nuts) : base(productName, price)
         {
             TypeNuts = nuts;
+            Catagory = "Nuts";
         }
 
     }

@@ -19,6 +19,7 @@ namespace Automat_wpf.Class
         public Soda(string productName, int price, Flavour _flavour): base(productName, price)
         {
             Flavour = _flavour;
+            Catagory = "Soda";
         }
     }
 }

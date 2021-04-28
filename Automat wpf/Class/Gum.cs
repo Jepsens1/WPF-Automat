@@ -10,7 +10,7 @@ namespace Automat_wpf.Class
     {
         public Gum(string productName, int price) : base(productName, price)
         {
-
+            Catagory = "Gum";
         }
     }
 }

@@ -15,13 +15,12 @@ namespace Automat_wpf.Class
         public void Insert(Item item)
         {
            
-            string InsertReciep = "INSERT INTO Reciep(item, Amount) VALUES(@item, @amount)";
+            string InsertReciep = "INSERT INTO Reciep(item) VALUES(@item)";
             using (SqlConnection connection = new SqlConnection(connstring))
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(InsertReciep, connection);
                 cmd.Parameters.AddWithValue("@item", item.Name);
-                cmd.Parameters.AddWithValue("@amount", item.Amount);
                 cmd.ExecuteNonQuery();
             }
             

@@ -10,6 +10,7 @@ namespace Automat_wpf.Class
     {
         public Chip(string productName, int price) : base(productName, price)
         {
+            Catagory = "Chips";
         }
     }
 }
