@@ -39,7 +39,7 @@ namespace Automat_wpf
             {    
                 PurchaceLabel.Content = "Purchace compledted";
                 TotalMoney.Content = $"You have {machine.CurrentMoney} dollars to spend";
-                ItemImage.Source = GetImageForItem(user.Items.Count);  
+                ItemImage.Source = GetImageForItem(user.Items[user.Items.Count]);  
             }
             
         }
