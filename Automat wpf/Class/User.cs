@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 using Automat_wpf;
 
 namespace Automat_wpf.Class
@@ -38,16 +38,17 @@ namespace Automat_wpf.Class
         }
         public bool BuyItem(Machine machine, string CatagoryOfItem)
         {
+            
             ItemManager manager = new ItemManager();
             Item item = machine.GetItem(CatagoryOfItem);
             if (item == null)
             {
-               
                 return false;
             }
             else
             {
                 Items.Add(item);
+                
                 manager.InsertData(item);
                 return true;
             }

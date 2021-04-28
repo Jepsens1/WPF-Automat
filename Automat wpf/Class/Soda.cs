@@ -20,6 +20,7 @@ namespace Automat_wpf.Class
         {
             Flavour = _flavour;
             Catagory = "Soda";
+            ImageSource = @"C:\Users\phil5714\Downloads\Fanta.png";
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Automat_wpf
     {
         User user = new User(200);
         Machine machine = new Machine();
-        
+        BitmapImage image = new BitmapImage();
 
         public MainWindow()
         {
@@ -33,11 +33,13 @@ namespace Automat_wpf
 
         private void BuyItem(object sender, RoutedEventArgs e)
         {
+
             Button b = (Button)sender;
             if (user.BuyItem(machine, b.Tag.ToString()))
-            {
+            {    
                 PurchaceLabel.Content = "Purchace compledted";
                 TotalMoney.Content = $"You have {machine.CurrentMoney} dollars to spend";
+                ItemImage.Source = GetImageForItem(user.Items.Count);  
             }
             
         }
@@ -64,6 +66,11 @@ namespace Automat_wpf
         {
             TotalMoney.Content = $"You have returned {machine.CurrentMoney}$";
             machine.ReturnMoney(user);
+        }
+        public BitmapImage GetImageForItem(Item item)
+        {
+
+            return null;
         }
     }
 }

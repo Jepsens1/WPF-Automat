@@ -15,6 +15,8 @@ namespace Automat_wpf.Class
         public int Amount { get; set; }
 
         public string Catagory { get; set; }
+
+        public string ImageSource { get; set; }
         //public int ItemsRemaining { get; set; }
 
         public Item(string productName, int price)

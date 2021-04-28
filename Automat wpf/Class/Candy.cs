@@ -19,6 +19,7 @@ namespace Automat_wpf.Class
         {
             TypeCandy = type;
             Catagory = "Candy";
+            ImageSource = "";
         }
     }
 }
