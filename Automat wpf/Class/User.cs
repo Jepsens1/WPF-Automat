@@ -49,7 +49,7 @@ namespace Automat_wpf.Class
             {
                 Items.Add(item);
                 
-                manager.InsertData(item);
+                //manager.InsertData(item);
                 return true;
             }
 

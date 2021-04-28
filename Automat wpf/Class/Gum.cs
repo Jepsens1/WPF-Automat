@@ -11,6 +11,7 @@ namespace Automat_wpf.Class
         public Gum(string productName, int price) : base(productName, price)
         {
             Catagory = "Gum";
+            ImageSource = @"C:\Users\PhillipPC\Source\Repos\WPF-Automat\Automat wpf\Images\Gum.png";
         }
     }
 }

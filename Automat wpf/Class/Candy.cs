@@ -19,7 +19,7 @@ namespace Automat_wpf.Class
         {
             TypeCandy = type;
             Catagory = "Candy";
-            ImageSource = "";
+            ImageSource = @"C:\Users\PhillipPC\Source\Repos\WPF-Automat\Automat wpf\Images\Candy.png";
         }
     }
 }

@@ -32,14 +32,15 @@ namespace Automat_wpf
         }
 
         private void BuyItem(object sender, RoutedEventArgs e)
+
         {
 
             Button b = (Button)sender;
             if (user.BuyItem(machine, b.Tag.ToString()))
             {    
-                PurchaceLabel.Content = "Purchace compledted";
+                PurchaceLabel.Content = "Purchace complete";
                 TotalMoney.Content = $"You have {machine.CurrentMoney} dollars to spend";
-                ItemImage.Source = GetImageForItem(user.Items[user.Items.Count]);  
+                ItemImage.Source = GetImage(user.Items[user.Items.Count - 1]);  
             }
             
         }
@@ -67,10 +68,11 @@ namespace Automat_wpf
             TotalMoney.Content = $"You have returned {machine.CurrentMoney}$";
             machine.ReturnMoney(user);
         }
-        public BitmapImage GetImageForItem(Item item)
+        private BitmapImage GetImage(Item iteme)
         {
-
-            return null;
+            Uri uri = new Uri(iteme.ImageSource);
+            BitmapImage image = new BitmapImage(uri);
+            return image;
         }
     }
 }

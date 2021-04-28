@@ -21,9 +21,9 @@
         <Button Tag="Nuts" Name="NutsButton" Content="Nuts 7$" HorizontalAlignment="Left" Margin="595,65,0,0" VerticalAlignment="Top" Width="75" Click="BuyItem"/>
         <Button Tag="Chips" Name="ChipsButton" Content="Chips 10$" HorizontalAlignment="Left" Margin="595,115,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="3,1.75" Click="BuyItem"/>
         <Button Tag="Gum" Name="BubblegumButton" Content="BubbleGum 3$" HorizontalAlignment="Left" Margin="480,65,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="1.667,0.5" Click="BuyItem"/>
-        <Label Name="PurchaceLabel" Content="" HorizontalAlignment="Left" Margin="80,170,0,0" VerticalAlignment="Top" Width="345" Height="174" FontSize="16" FontWeight="Bold"/>
+        <Label Name="PurchaceLabel" Content="" HorizontalAlignment="Left" Margin="140,215,0,0" VerticalAlignment="Top" Width="285" Height="129" FontSize="16" FontWeight="Bold"/>
         <Button Content="ReturnMoney" HorizontalAlignment="Left" Margin="695,115,0,0" VerticalAlignment="Top" Width="75" Click="ReturnMoney"/>
-        <Image  Name="ItemImage" HorizontalAlignment="Left" Height="100" Margin="145,95,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image  Name="ItemImage" HorizontalAlignment="Left" Height="100" Margin="200,95,0,0" VerticalAlignment="Top" Width="225"/>
 
 
     </Grid>

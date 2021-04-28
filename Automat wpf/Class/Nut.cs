@@ -20,6 +20,7 @@ namespace Automat_wpf.Class
         {
             TypeNuts = nuts;
             Catagory = "Nuts";
+            ImageSource = @"C:\Users\PhillipPC\Source\Repos\WPF-Automat\Automat wpf\Images\Nuts.png";
         }
 
     }
