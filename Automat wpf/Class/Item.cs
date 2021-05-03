@@ -14,12 +14,14 @@ namespace Automat_wpf.Class
         public string Catagory { get; set; }
 
         public string ImageSource { get; set; }
+        public int Amount { get; set; } = 0;
         //public int ItemsRemaining { get; set; }
 
         public Item(string productName, int price)
         {
             Name = productName;
             Price = price;
+            
             
             //ItemsRemaining = itemsRemaining;
         }

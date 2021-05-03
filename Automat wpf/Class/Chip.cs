@@ -11,7 +11,7 @@ namespace Automat_wpf.Class
         public Chip(string productName, int price) : base(productName, price)
         {
             Catagory = "Chips";
-            ImageSource = @"C:\Users\PhillipPC\Source\Repos\WPF-Automat\Automat wpf\Images\Chips.png";
+            ImageSource = @"C:\Users\phil5714\Downloads\Chips.png";
         }
     }
 }

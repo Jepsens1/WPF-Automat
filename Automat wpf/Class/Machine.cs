@@ -10,7 +10,7 @@ namespace Automat_wpf.Class
         public List<Item> Items { get; set; }
         public int CurrentMoney { get; set; }
 
-
+        ItemManager manager = new ItemManager();
         public Machine()
         {
             Items = new List<Item>();
@@ -27,6 +27,15 @@ namespace Automat_wpf.Class
             Items.Add(new Candy("Matador Mix", 5, CandyTypes.MatadorMix));
             Items.Add(new Chip("Doritos", 10));
             Items.Add(new Gum("Bubblegum", 3));
+        }
+        public void Refill()
+        {
+            List<Item> items = manager.Refill();
+            for (int i = 0; i < items.Count; i++)
+            {
+                Items.Add(items[i]);
+            }
+           
         }
         public Item GetItem(string ButtonValue)
         {

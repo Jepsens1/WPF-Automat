@@ -40,6 +40,7 @@ namespace Automat_wpf
             {    
                 PurchaceLabel.Content = "Purchace complete";
                 TotalMoney.Content = $"You have {machine.CurrentMoney} dollars to spend";
+                Userlist.Content += $"{user.Items[user.Items.Count - 1].Name}\n";
                 ItemImage.Source = GetImage(user.Items[user.Items.Count - 1]);  
             }
             
@@ -60,6 +61,7 @@ namespace Automat_wpf
                     user.Deposit(machine, 20);
                     break;
                 default:
+
                     break;
             }
         }
@@ -73,6 +75,11 @@ namespace Automat_wpf
             Uri uri = new Uri(iteme.ImageSource);
             BitmapImage image = new BitmapImage(uri);
             return image;
+        }
+
+        private void RefillBtn_Click(object sender, RoutedEventArgs e)
+        {
+            machine.Refill();
         }
     }
 }

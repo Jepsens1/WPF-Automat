@@ -41,15 +41,17 @@ namespace Automat_wpf.Class
             
             ItemManager manager = new ItemManager();
             Item item = machine.GetItem(CatagoryOfItem);
+            
             if (item == null)
             {
                 return false;
             }
             else
             {
+                item.Amount++;
                 Items.Add(item);
-                
-                //manager.InsertData(item);
+
+                manager.InsertData(item);
                 return true;
             }
 

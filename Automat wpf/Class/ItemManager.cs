@@ -14,6 +14,10 @@ namespace Automat_wpf.Class
         {
            dalmanager.Insert(item);
         }
+        public List<Item> Refill()
+        {
+            return dalmanager.Refill();
+        }
        
         
     }
