@@ -20,6 +20,7 @@ namespace Automat_wpf.Class
             cmd.Parameters.AddWithValue("@name", item.Name);
             cmd.Parameters.AddWithValue("@amount", item.Amount);
             cmd.Parameters.AddWithValue("@catagory", item.Catagory);
+            cmd.Parameters.AddWithValue("@price", item.Price);
             cmd.ExecuteNonQuery();
             connection.Close();
         }
@@ -34,14 +35,36 @@ namespace Automat_wpf.Class
             {
                 for (int i = 0; i < rdr.FieldCount; i++)
                 {
-                    Item item = new Item(rdr[0].ToString(), (int)rdr[1]);
-                    item.Catagory = rdr[2].ToString();
-                    items.Add(item);
+                    switch (rdr[2].ToString())
+                    {
+                        case "Soda":
+                            Item soda = new Soda(rdr[0].ToString(), (int)Flavour.Cherry);
+                            items.Add(soda);
+                            break;
+                        case "Chips":
+                            Item chips = new Chip(rdr[0].ToString(), (int)rdr[3]);
+                            items.Add(chips);
+                            break;
+                        case "Nuts":
+                            Item nuts = new Nut(rdr[0].ToString(), (int)rdr[3], NutTypes.Cashew);
+                            items.Add(nuts);
+                            break;
+                        case "Candy":
+                            Item candy = new Candy(rdr[0].ToString(), (int)rdr[3], CandyTypes.MatadorMix);
+                            items.Add(candy);
+                            break;
+                        case "Gum":
+                            Item gum = new Gum(rdr[0].ToString(), (int)rdr[3]);
+                            items.Add(gum);
+                            break;
+                        default:
+                            break;
+                    }
                 }
+                connection.Close();
                 return items;
 
             }
-            connection.Close();
             return null;
         }
 

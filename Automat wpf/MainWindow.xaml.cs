@@ -29,6 +29,7 @@ namespace Automat_wpf
         {
             InitializeComponent();
             machine.AddItems();
+           
         }
 
         private void BuyItem(object sender, RoutedEventArgs e)

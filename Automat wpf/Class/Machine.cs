@@ -22,7 +22,7 @@ namespace Automat_wpf.Class
         }
         public void AddItems()
         { 
-            Items.Add(new Soda("Fanta", 5, Flavour.Original));
+            Items.Add(new Soda("Fanta", 5));
             Items.Add(new Nut("Cashew", 7, NutTypes.Cashew));
             Items.Add(new Candy("Matador Mix", 5, CandyTypes.MatadorMix));
             Items.Add(new Chip("Doritos", 10));

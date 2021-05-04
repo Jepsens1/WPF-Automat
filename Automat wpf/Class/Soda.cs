@@ -8,17 +8,16 @@ namespace Automat_wpf.Class
 {
     enum Flavour
     {
-        Cherry,
+        Cherry = 5,
         Strawberry,
         Original,
         SugarFree
     }
     class Soda : Item
     {
-        public Flavour Flavour { get; set; }
-        public Soda(string productName, int price, Flavour _flavour): base(productName, price)
+        public Soda(string productName, int price): base(productName, price)
         {
-            Flavour = _flavour;
+            
             Catagory = "Soda";
             ImageSource = @"C:\Users\phil5714\Downloads\Soda.png";
         }
